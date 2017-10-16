@@ -10,8 +10,7 @@
   <email>chuck@horde.org</email>
   <active>yes</active>
  </lead>
- <date>2012-07-19</date>
- <time>22:36:22</time>
+ <date>2017-10-13</date>
  <version>
   <release>1.0.0alpha1</release>
   <api>1.0.0</api>
@@ -32,12 +31,12 @@
     <file name="conf.xml" role="horde" />
     <file name="fields.php" role="horde" />
    </dir> <!-- /config -->
-   <dir name="docs">
+   <dir name="doc">
     <file name="CHANGES" role="doc" />
     <file name="CREDITS" role="doc" />
     <file name="INSTALL" role="doc" />
     <file name="TODO" role="doc" />
-   </dir> <!-- /docs -->
+   </dir> <!-- /doc -->
    <dir name="lib">
     <dir name="Action">
      <file name="Mailto.php" role="horde" />
@@ -207,10 +206,10 @@
    <install as="ulaform/config/.htaccess" name="config/.htaccess" />
    <install as="ulaform/config/conf.xml" name="config/conf.xml" />
    <install as="ulaform/config/fields.php" name="config/fields.php" />
-   <install as="CHANGES" name="docs/CHANGES" />
-   <install as="CREDITS" name="docs/CREDITS" />
-   <install as="INSTALL" name="docs/INSTALL" />
-   <install as="TODO" name="docs/TODO" />
+   <install as="CHANGES" name="doc/CHANGES" />
+   <install as="CREDITS" name="doc/CREDITS" />
+   <install as="INSTALL" name="doc/INSTALL" />
+   <install as="TODO" name="doc/TODO" />
    <install as="ulaform/lib/.htaccess" name="lib/.htaccess" />
    <install as="ulaform/lib/Action.php" name="lib/Action.php" />
    <install as="ulaform/lib/Api.php" name="lib/Api.php" />
@@ -273,7 +272,7 @@
     <release>alpha</release>
     <api>alpha</api>
    </stability>
-   <date>2012-07-19</date>
+   <date>2017-10-13</date>
    <license uri="http://www.horde.org/licenses/gpl.php">GPL-2.0</license>
    <notes>
 * [jan] Officially support PHP 7.
