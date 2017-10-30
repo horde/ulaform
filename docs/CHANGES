@@ -1,6 +1,6 @@
---------
-v1.0-git
---------
+----------------
+v1.0.0alpha1-git
+----------------
 
 [jan] Officially support PHP 7.
 [jan] Add Latvian translation (Jānis Eisaks <jancs@dv.lv>).
@@ -9,8 +9,7 @@ v1.0-git
 [jan] Create TEXT columns for form fields with long data (Request #5510).
 [cjh] Add API methods and per-form permissions (duck@obala.net, Request #5331).
 [ben] Better support for MS-SQL.
-[jan] Use bind variables in the SQL drivers (selsky@columbia.edu,
-      Bugs #1682).
+[jan] Use bind variables in the SQL drivers (selsky@columbia.edu, Bugs #1682).
 [cjh] Do charset conversion on way in/out of database (Bug #332).
 [jan] Support file uploads with SQL driver.
 [jmf] Support file uploads.
