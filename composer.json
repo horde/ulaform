@@ -1,7 +1,7 @@
 {
     "name": "horde/ulaform",
     "description": "HTML form generation and processing application",
-    "type": "project",
+    "type": "horde-application",
     "homepage": "https://www.horde.org",
     "license": "GPL-2.0",
     "authors": [
@@ -11,24 +11,22 @@
             "role": "lead"
         }
     ],
-    "version": "1.0.0alpha1",
-    "time": "2017-11-11",
+    "time": "2021-07-04",
     "repositories": [
         {
-            "type": "pear",
-            "url": "https://pear.horde.org"
+            "type": "composer",
+            "url": "https://horde-satis.maintaina.com/"
         }
     ],
     "require": {
-        "php": "^5.3 || ^7",
-        "pear-pear.horde.org/horde": "^5",
-        "pear-pear.horde.org/Horde_Core": "^2",
-        "pear-pear.horde.org/Horde_Db": "^2"
+        "horde/horde-installer-plugin": "*",
+        "php": "^7",
+        "horde/horde": "^6",
+        "horde/Core": "^3",
+        "horde/db": "^3"
     },
-    "replace": {
-        "pear-pear.horde.org/ulaform": "1.*",
-        "pear-horde/ulaform": "1.*"
-    },
+    "require-dev": {},
+    "suggest": {},
     "autoload": {
         "psr-0": {
             "Ulaform": "lib/"

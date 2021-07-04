@@ -27,8 +27,8 @@ license:
   uri: http://www.horde.org/licenses/gpl.php
 dependencies:
   required:
-    php: ^5.3 || ^7
-    pear:
-      pear.horde.org/horde: ^5
-      pear.horde.org/Horde_Core: ^2
-      pear.horde.org/Horde_Db: ^2
+    php: ^7
+    composer:
+      horde/horde: ^6
+      horde/Core: ^3
+      horde/db: ^3

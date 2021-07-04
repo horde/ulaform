@@ -34,7 +34,7 @@ require_once HORDE_BASE . '/lib/core.php';
 
 class Ulaform_Application extends Horde_Registry_Application
 {
-    public $version = 'H5 (1.0-git)';
+    public $version = '1.0.0alpha1';
 
     /**
      * Global variables defined:
