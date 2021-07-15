@@ -23,7 +23,7 @@
         "horde/horde-installer-plugin": "dev-FRAMEWORK_6_0 || *",
         "php": "^7",
         "horde/horde": "^6 || dev-FRAMEWORK_6_0",
-        "horde/Core": "^3 || dev-FRAMEWORK_6_0",
+        "horde/core": "^3 || dev-FRAMEWORK_6_0",
         "horde/db": "^3 || dev-FRAMEWORK_6_0"
     },
     "require-dev": {},
