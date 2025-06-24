@@ -39,7 +39,7 @@ if ($vars->get('submitbutton') == _("Delete")) {
     $fieldform->validate($vars);
 
     if ($fieldform->isValid()) {
-        $fieldform->getInfo($vars, $info);
+        $info = $fieldform->getInfo($vars, $info);
         try {
             $del_field = $injector->getInstance('Ulaform_Factory_Driver')->create()->deleteField($info['field_id']);
             $notification->push(sprintf(_("Field \"%s\" deleted."), $info['field_name']), 'horde.success');

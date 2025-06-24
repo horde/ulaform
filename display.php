@@ -56,7 +56,7 @@ foreach ($fields as $field) {
 
 /* Check if submitted and validate. */
 if ($form->validate($vars)) {
-    $form->getInfo($vars, $info);
+    $info = $form->getInfo($vars, $info);
     try {
         $submit = $ulaform_driver->submitForm($info);
         $notification->push(_("Form submitted successfully."), 'horde.success');

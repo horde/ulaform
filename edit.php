@@ -86,7 +86,7 @@ if ($formname && !$changed_action) {
     $form->validate($vars);
 
     if ($form->isValid()) {
-        $form->getInfo($vars, $info);
+        $info = $form->getInfo($vars, $info);
         try {
             $form_id = $ulaform_driver->saveForm($info);
             $notification->push(_("Form details saved."), 'horde.success');

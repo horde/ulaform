@@ -31,7 +31,7 @@ if ($form_submit == _("Delete")) {
     $delform->validate($delvars);
 
     if ($delform->isValid()) {
-        $delform->getInfo($delvars, $info);
+        $info = $delform->getInfo($delvars, $info);
         try {
             $deleteform = $ulaform_driver->deleteForm($info['form_id']);
             $notification->push(_("Form deleted."), 'horde.success');

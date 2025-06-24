@@ -64,7 +64,7 @@ if ($formname && !$changed_type) {
     $form->validate($vars);
 
     if ($form->isValid()) {
-        $form->getInfo($vars, $info);
+        $info = $form->getInfo($vars, $info);
         switch ($type) {
         case 'php_pear':
             $html = array(

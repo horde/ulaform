@@ -73,7 +73,7 @@ $vars->set('old_field_type', $field_type);
 
 if ($fieldform->validate($vars)) {
     /* Save field if valid and the current and old field type match. */
-    $fieldform->getInfo($vars, $info);
+    $info = $fieldform->getInfo($vars, $info);
     try {
         $save_field = $injector->getInstance('Ulaform_Factory_Driver')->create()->saveField($info);
         $notification->push(_("Field saved."), 'horde.success');

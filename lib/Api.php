@@ -104,7 +104,7 @@ class Ulaform_Api extends Horde_Registry_Api
         /* Check if submitted and validate. */
         $result = array('title' => $form_info['form_name']);
         if ($form->validate()) {
-            $form->getInfo(null, $info);
+            $info = $form->getInfo(null, $info);
             try {
                 $GLOBALS['ulaform_driver']->submitForm($info);
                 return true;
