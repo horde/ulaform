@@ -32,7 +32,7 @@ if ($formname) {
     $sortform->validate($vars);
 
     if ($sortform->isValid()) {
-        $info = $sortform->getInfo($vars, $info);
+        $info = $sortform->getInfo($vars);
         try {
             $sort = $injector->getInstance('Ulaform_Factory_Driver')->create()->sortFields($info);
             $notification->push(_("Field sort order saved."), 'horde.success');
