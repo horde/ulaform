@@ -74,7 +74,7 @@ class Ulaform_Block_Form extends Horde_Core_Block {
             $form->validate($vars);
 
             if ($form->isValid() && $formname) {
-                $info = $form->getInfo($vars, $info);
+                $info = $form->getInfo($vars);
                 $info['form_id'] = $this->_params['form_id'];
 
                 try {
