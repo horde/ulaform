@@ -20,14 +20,14 @@ class UlaformUpgradeAutoIncrement extends Horde_Db_Migration_Base
     public function up()
     {
         $this->changeColumn('ulaform_fields', 'field_id', 'autoincrementKey');
-        try {
+        if (in_array('ulaform_fields_seq', $this->tables())) {
             $this->dropTable('ulaform_fields_seq');
-        } catch (Horde_Db_Exception $e) {}
+        }
 
         $this->changeColumn('ulaform_forms', 'form_id', 'autoincrementKey');
-        try {
+        if (in_array('ulaform_forms_seq', $this->tables())) {
             $this->dropTable('ulaform_forms_seq');
-        } catch (Horde_Db_Exception $e) {}
+        }
     }
 
     /**
