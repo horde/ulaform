@@ -9,7 +9,6 @@
     identifier: GPL-2.0
     uri: http://www.horde.org/licenses/gpl.php
   notes: |+
-    
 1.0.0alpha1:
   api: 1.0.0
   state:
@@ -43,3 +42,24 @@
     [mdj] Horde_Block is now supported - forms can be used in other Horde apps.
     [mdj] Major rewrite of Ulaform to use Horde_Form.
     [cjh] Reorganize towards a modern Horde app.
+1.0.0-RC1:
+  api: 1.0.0-RC1
+  state:
+    release: RC
+    api: RC
+  date: 2026-05-19
+  license:
+    identifier: GPL-2.0
+    uri: https://spdx.org/licenses/GPL-2.0.html
+  notes: |-
+    chore: Require PHP 8
+    refactor(injector): Widen type hints from Horde_Injector to Horde_Injector|Injector
+    fix: More defensive code when trying to drop tables
+    docs: Clarify where to put local overrides
+    fix: Drop unneeded / uninitialized getInfo() parameter
+    fix: Drop unnecessary / uninitialized form parametet
+    fix: getInfo() no longer writes back to second parameter. Use return value.
+    Mark as a H6 app.
+    changed requirement horde/Core to lowercase
+    Add CI job for satis repo update
+    Development mode for ulaform-1.0.0alpha3

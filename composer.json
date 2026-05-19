@@ -1,5 +1,4 @@
 {
-    "minimum-stability": "dev",
     "name": "horde/ulaform",
     "description": "HTML form generation and processing application",
     "type": "horde-application",
@@ -12,16 +11,11 @@
             "role": "lead"
         }
     ],
-    "time": "2021-07-04",
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://horde-satis.maintaina.com/"
-        }
-    ],
+    "time": "2026-05-19",
+    "repositories": [],
     "require": {
-        "horde/horde-installer-plugin": "dev-FRAMEWORK_6_0 || *",
-        "php": "^7",
+        "horde/horde-installer-plugin": "dev-FRAMEWORK_6_0 || ^3 || ^2",
+        "php": "^7 || ^8",
         "horde/horde": "^6 || dev-FRAMEWORK_6_0",
         "horde/core": "^3 || dev-FRAMEWORK_6_0",
         "horde/db": "^3 || dev-FRAMEWORK_6_0"
@@ -29,8 +23,22 @@
     "require-dev": {},
     "suggest": {},
     "autoload": {
-        "psr-0": {
-            "Ulaform": "lib/"
+        "classmap": [
+            "lib/"
+        ],
+        "psr-4": {
+            "Horde\\Ulaform\\": "src/"
+        }
+    },
+    "autoload-dev": {},
+    "config": {
+        "allow-plugins": {
+            "horde/horde-installer-plugin": true
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-FRAMEWORK_6_0": "1.x-dev"
         }
     }
 }
