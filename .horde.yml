@@ -27,8 +27,14 @@ license:
   uri: http://www.horde.org/licenses/gpl.php
 dependencies:
   required:
-    php: ^7
+    php: ^7 || ^8
     composer:
       horde/horde: ^6
       horde/Core: ^3
       horde/db: ^3
+autoload:
+  classmap:
+    - lib/
+  psr-4:
+    Horde\Ulaform\: src/
+vendor: horde
